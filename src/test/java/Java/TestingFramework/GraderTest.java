@@ -45,7 +45,7 @@ class GraderTest {
     }//remember char or string?
 
     @Test
-    void negativePercentGradeShouldReturnError(){
+    void percentGivenShouldReturnError(){
         var graderTest = new Grader();
         assertThrows(IllegalArgumentException.class, () ->{
             graderTest.determineLetterGrade(-1);
