@@ -18,6 +18,9 @@ public class Grader {
         else if (numberGrade < 90){
             return 'B';
         }
+        else if (numberGrade > 100){
+            throw new IllegalArgumentException("Number grade cannot be greater than 100 percent");
+        }
         else{
             return 'A';
         }
